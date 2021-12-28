@@ -121,11 +121,6 @@ article {
     padding: 5rem 0rem;
 }
 
-section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
 p,
 dl,
 ol,
@@ -180,19 +175,7 @@ blockquote footer {
     text-align: right;
 }
 
-section > p,
-section > footer,
-section > table {
-    width: 55%;
-}
-
-/* 50 + 5 == 55, to be the same width as paragraph */
-section > dl,
-section > ol,
-section > ul {
-    width: 50%;
-    -webkit-padding-start: 5%;
-}
+p, footer, table { width: 55%; }
 
 dt:not(:first-child),
 li:not(:first-child) {
@@ -414,20 +397,14 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     hr,
-    section > p,
-    section > footer,
-    section > table {
+    p,
+    footer,
+    img {
         width: 100%;
     }
 
     pre > code {
         width: 97%;
-    }
-
-    section > dl,
-    section > ol,
-    section > ul {
-        width: 90%;
     }
 
     figure {
@@ -478,9 +455,4 @@ label.margin-toggle:not(.sidenote-number) {
     div.table-wrapper,
     table {
         width: 85%;
-    }
-
-    img {
-        width: 100%;
-    }
-}
+    }}
